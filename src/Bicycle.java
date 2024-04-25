@@ -1,6 +1,11 @@
-public class Bicycle extends Vehicle {
+public class Bicycle extends Vehicle implements Maintenance{
     public Bicycle(String modelName, int wheelsCount) {
-        setModelName(modelName);
-        setWheelsCount(wheelsCount);
+        super(modelName, wheelsCount);
+    }
+    @Override
+    public void service() {
+        System.out.println("Обслуживаем " + getModelName());
+        updateTyre();
+        checkEngine();
     }
 }

@@ -1,6 +1,12 @@
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Maintenance{
     public Car(String modelName, int wheelsCount) {
-        setModelName(modelName);
-        setWheelsCount(wheelsCount);
+        super(modelName, wheelsCount);
+    }
+
+    @Override
+    public void service() {
+        System.out.println("Обслуживаем " + getModelName());
+        updateTyre();
+        checkEngine();
     }
 }
