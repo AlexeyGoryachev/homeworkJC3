@@ -14,6 +14,8 @@ public class Main {
                 new Bicycle("bicycle2", 2),
         };
 
+
+
         ServiceStation station = new ServiceStation();
         for (Car car : cars) {
             station.checkAndService(car);

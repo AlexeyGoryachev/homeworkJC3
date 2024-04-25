@@ -3,6 +3,7 @@ public class Car extends Vehicle implements Maintenance{
         super(modelName, wheelsCount);
     }
 
+
     @Override
     public void service() {
         System.out.println("Обслуживаем " + getModelName());
