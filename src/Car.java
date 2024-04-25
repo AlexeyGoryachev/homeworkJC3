@@ -1,13 +1,6 @@
-public class Car {
-
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+public class Car extends Vehicle {
+    public Car(String modelName, int wheelsCount) {
+        setModelName(modelName);
+        setWheelsCount(wheelsCount);
     }
 }
